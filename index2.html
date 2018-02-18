@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Revamped</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="game2.js"></script>
+</head>
+<body>
+
+        <script type="text/javascript">
+            //Prompting what's name before starting game
+        var name = prompt("What's your name?");
+        alert("Hello " + name + "!");
+        confirm("Are you ready for a game of Hangman?");
+        alert("If so, beware!!");    
+            
+        </script>
+        
+        <div class= "jumbotron">
+            <div class="container">
+                <h1 class="text-center">Horror in Hollywood</h1>
+                <h4 class="text-center">Rated B for Beware</h4>
+                <p class="text-center">This is your ordinary game of Hangman, but with a twist!</p>
+                <p class="text-center">Click on a letter in the alphabet to guess the word, or click hint to get a clue!</p>
+                <p class="text-center">Let's see if you come out alive!!</p>
+                <button type="button" class="btn btn-danger btn-lg center-block">Enter if you Dare</button>
+                <img src="http://cdn1.collective-evolution.com/assets/uploads/2014/05/exorcist-759x500.jpg" class="img-fluid center-block" alt="Exorcist"></img>
+                <div class="text-center">
+                <audio id="themeSong" src="assets/images/Michael-Myers-Original-Theme-song-instrumentalfx.mp3" autoplay></audio>   
+                </div>
+            </div>
+        </div>
+    
+        <div class="wrapper">
+            <div id="buttons">
+            </div>
+            <p id="catagoryName"></p>
+            <div id="hold">
+            </div>
+            <p id="mylives"></p>
+            <p id="clue">Clue -</p>
+            <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+            <div class="container">
+                <button id="hint">Hint</button>
+                <button id="reset">Play again</button>
+            </div>
+        </div>
+            
+    
+</body>
+</html>
